@@ -120,8 +120,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tds-ue-ZrD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tds-ue-ZrD">
                                 <rect key="frame" x="466" y="326" width="1156" height="339"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1156" id="023-AS-7yY"/>
+                                    <constraint firstAttribute="height" constant="339" id="zUT-mG-Q51"/>
+                                </constraints>
                                 <string key="text">	New York City is the business capital of the world,</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -159,7 +163,7 @@
                                     <constraint firstAttribute="height" constant="26" id="6hn-ox-vV1"/>
                                     <constraint firstAttribute="width" constant="195" id="WsT-mB-tYP"/>
                                 </constraints>
-                                <mutableString key="text">- New York: City                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              </mutableString>
+                                <string key="text">- New York: City                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -225,9 +229,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gradient.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="A8Y-Ag-6Qa">
+                            <imageView userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gradient.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="A8Y-Ag-6Qa">
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gve-NU-oOq">
                                 <rect key="frame" x="90" y="675" width="234" height="17"/>
@@ -242,9 +245,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="tds-ue-ZrD" firstAttribute="leading" secondItem="A8Y-Ag-6Qa" secondAttribute="trailing" constant="52" id="093-Rh-yz9"/>
                             <constraint firstItem="Z9r-xI-X1X" firstAttribute="leading" secondItem="Su0-oE-LMX" secondAttribute="leading" id="1kR-rn-Q5x"/>
                             <constraint firstItem="Wrb-SU-ouP" firstAttribute="trailing" secondItem="Beb-8U-tPf" secondAttribute="trailing" id="2KO-4T-8sa"/>
                             <constraint firstItem="fds-fj-NZa" firstAttribute="trailing" secondItem="QnH-AK-Rag" secondAttribute="trailing" id="2le-EQ-LW9"/>
+                            <constraint firstItem="A8Y-Ag-6Qa" firstAttribute="top" secondItem="Z9r-xI-X1X" secondAttribute="top" id="5Gb-qx-GYZ"/>
                             <constraint firstItem="Beb-8U-tPf" firstAttribute="leading" secondItem="Sq0-Qk-E1w" secondAttribute="leading" id="8eo-83-amo"/>
                             <constraint firstItem="fds-fj-NZa" firstAttribute="top" secondItem="Z9r-xI-X1X" secondAttribute="bottom" constant="27" id="A2O-8Z-gF6"/>
                             <constraint firstItem="Wrb-SU-ouP" firstAttribute="top" secondItem="BNB-8c-z2x" secondAttribute="bottom" constant="8" symbolic="YES" id="AJ3-fw-Dzp"/>
@@ -264,6 +269,7 @@
                             <constraint firstItem="gve-NU-oOq" firstAttribute="leading" secondItem="Uzn-18-Rhz" secondAttribute="leadingMargin" constant="70" id="KYe-G5-7Iz"/>
                             <constraint firstItem="BNB-8c-z2x" firstAttribute="leading" secondItem="Wrb-SU-ouP" secondAttribute="leading" id="LcR-bg-9YV"/>
                             <constraint firstItem="QnH-AK-Rag" firstAttribute="top" secondItem="fds-fj-NZa" secondAttribute="bottom" constant="31" id="Ms7-TA-iFa"/>
+                            <constraint firstItem="A8Y-Ag-6Qa" firstAttribute="bottom" secondItem="fFN-Dr-A98" secondAttribute="top" id="Rhh-H7-hfD"/>
                             <constraint firstItem="Wrb-SU-ouP" firstAttribute="top" secondItem="rml-LG-oCc" secondAttribute="bottom" constant="62" id="WKf-AO-Q6z"/>
                             <constraint firstItem="rml-LG-oCc" firstAttribute="top" secondItem="QnH-AK-Rag" secondAttribute="bottom" constant="8" symbolic="YES" id="Wwk-71-h9O"/>
                             <constraint firstItem="QnH-AK-Rag" firstAttribute="leading" secondItem="rml-LG-oCc" secondAttribute="leading" id="Z0C-Dc-sbc"/>
@@ -271,9 +277,11 @@
                             <constraint firstItem="rml-LG-oCc" firstAttribute="trailing" secondItem="Wrb-SU-ouP" secondAttribute="trailing" id="aga-oZ-cFQ"/>
                             <constraint firstItem="BNB-8c-z2x" firstAttribute="top" secondItem="QnH-AK-Rag" secondAttribute="bottom" constant="32" id="bm4-9M-YXe"/>
                             <constraint firstItem="QnH-AK-Rag" firstAttribute="trailing" secondItem="BNB-8c-z2x" secondAttribute="trailing" id="c8W-Yc-rzf"/>
+                            <constraint firstItem="A8Y-Ag-6Qa" firstAttribute="centerX" secondItem="Sq0-Qk-E1w" secondAttribute="centerX" id="cSg-c2-LXa"/>
                             <constraint firstItem="BSt-NW-gpy" firstAttribute="leading" secondItem="QnH-AK-Rag" secondAttribute="leading" id="cht-mz-csx"/>
                             <constraint firstItem="fds-fj-NZa" firstAttribute="trailing" secondItem="Uzn-18-Rhz" secondAttribute="trailingMargin" id="iq9-qX-FR6"/>
                             <constraint firstItem="Wrb-SU-ouP" firstAttribute="leading" secondItem="aeQ-Y5-4Sa" secondAttribute="leading" id="l3n-z8-Jjx"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="tds-ue-ZrD" secondAttribute="bottom" constant="71" id="pm1-oJ-CHR"/>
                             <constraint firstItem="BNB-8c-z2x" firstAttribute="trailing" secondItem="aeQ-Y5-4Sa" secondAttribute="trailing" id="qbD-wO-Jgr"/>
                             <constraint firstItem="Sq0-Qk-E1w" firstAttribute="top" secondItem="aeQ-Y5-4Sa" secondAttribute="bottom" constant="29" id="tip-n7-0fh"/>
                             <constraint firstItem="rml-LG-oCc" firstAttribute="leading" secondItem="BNB-8c-z2x" secondAttribute="leading" id="usU-Pl-8ja"/>
@@ -356,7 +364,7 @@
                                     <constraint firstItem="6Zd-05-iYt" firstAttribute="top" secondItem="1Ax-k7-Kzw" secondAttribute="bottom" constant="8" id="Kzt-3O-2OV"/>
                                     <constraint firstAttribute="bottom" secondItem="QEe-jp-bCP" secondAttribute="bottom" constant="28" id="PGE-69-K6D"/>
                                     <constraint firstItem="QEe-jp-bCP" firstAttribute="top" secondItem="jkS-Ow-T6B" secondAttribute="bottom" constant="8" id="g6h-BD-w8d">
-                                        <mutableString key="userLabel">Manaus, Brazil - departure point of the amazon rainforest, forest theme with birds, water, etc.   Manaus is a port city along the Negro River set in the heart of the Amazon rainforest in Brazil. The tropical environment is home to many animals and large kapok trees. As you enter the forest, listen to the faint animals in the background and be prepared for intense rain.  .top = Anchorage, USA - cold, icy, windy, and water crashing theme   Careful, Anchorage set in south Alaska is known to have average temperatures of 20 degrees Fahrenheit. Be sure to carry your best jacket as you experience the harsh winds and snow of the North.  .bottom + 8</mutableString>
+                                        <string key="userLabel">Manaus, Brazil - departure point of the amazon rainforest, forest theme with birds, water, etc.   Manaus is a port city along the Negro River set in the heart of the Amazon rainforest in Brazil. The tropical environment is home to many animals and large kapok trees. As you enter the forest, listen to the faint animals in the background and be prepared for intense rain.  .top = Anchorage, USA - cold, icy, windy, and water crashing theme   Careful, Anchorage set in south Alaska is known to have average temperatures of 20 degrees Fahrenheit. Be sure to carry your best jacket as you experience the harsh winds and snow of the North.  .bottom + 8</string>
                                     </constraint>
                                     <constraint firstItem="jkS-Ow-T6B" firstAttribute="top" secondItem="6Zd-05-iYt" secondAttribute="bottom" constant="8" id="qMi-gS-HKu"/>
                                 </constraints>
@@ -499,6 +507,10 @@
                                     <segue destination="WFb-r3-tso" kind="push" id="H31-JK-Mys"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gradient.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HW9-5U-C69">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
